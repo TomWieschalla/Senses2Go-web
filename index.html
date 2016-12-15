@@ -2,10 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" id="text/css" href="style.css">
     <title>Senses2Go</title>
 </head>
 <body>
-<label id="label1">Bitte wähle einen Sensor: TEST</label>
+<label id="Headline" align="center">Bitte wähle einen Sensor:</label>
+<div id="main">
+    <p>
+        <button type="Button" id="GPSButton" onclick="window.location.href='/senses2go.adesso/pages/GPS/GPSPage.html'">GPS</button>
+        <button type="Button" id="GyroButton" onclick="window.location.href='/senses2go.adesso/pages/Gyro/GyroPage.html'">Gyroskop</button>
+        <button type="Button" id="MagnoButton" onclick="window.location.href='/senses2go.adesso/pages/Magno/MagnoPage.html'">Magnetometer</button>
+        <button type="Button" id="ACCButton" onclick="window.location.href='/senses2go.adesso/pages/Acc/AccPage.html'">Beschleunigung</button>
+        <button type="Button" id="ProxButton" onclick="window.location.href='/senses2go.adesso/pages/Prox/ProxPage.html'">Proximity</button>
+    </p>
+    <p>
+        <button type="Button" id="AirButton" onclick="window.location.href='/senses2go.adesso/pages/Air/AirPage.html'">Luftdruck</button>
+        <button type="Button" id="LightButton" onclick="window.location.href='/senses2go.adesso/pages/Light/LightPage.html'">Lichtintensität</button>
+        <button type="Button" id="CameraButton" onclick="window.location.href='/senses2go.adesso/pages/Camera/CameraPage.html'">Kamera</button>
+        <button type="Button" id="SoundButton" onclick="window.location.href='/senses2go.adesso/pages/Sound/SoundPage.html'">Lautsprecher</button>
+        <button type="Button" id="MicButton" onclick="window.location.href='/senses2go.adesso/pages/Mic/MicroPage.html'">Mikrofon</button>
+    </p>
+</div>
 
 </body>
 </html>
