@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>GPS</title>
+    <meta charset="utf-8">
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" id="text/css" href="GPStyle.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
-<body>
+<body onload="javascript:initGeolocation()">
+<p>
+    <label id="text1" align="center">Breitengrad in Dezimalgrad:</label>
+    <label id="result1" align="center"/>
+</p>
+<p>
+    <label id="text2" align="center">Längengrad in Dezimalgrad:</label>
+    <label id="result2" align="center"/>
+</p>
+<div id="map"></div>
+<script src="script.js" type="text/javascript"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVLXoZeUAdK88EsaP1Kc7ZWkramoZQaFc">
+</script>
 
 </body>
 </html>
