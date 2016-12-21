@@ -7,6 +7,9 @@ function init() {
            y = event.rotationRate.gamma;
            z = event.rotationRate.alpha;
         });
+    } else {
+        alert("Gyroskop nicht nutzbar!")
+        window.history.back();
     }
 
     window.setInterval(setData, 500);

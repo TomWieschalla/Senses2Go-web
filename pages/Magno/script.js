@@ -3,24 +3,22 @@ function init() {
 
     if (window.DeviceOrientationEvent) {
         if ('ondeviceorientationabsolute' in window) {
-            alert("Zugriff auf den Magnetometer möglich")
+            alert("absolut");
             window.addEventListener('deviceorientationabsolute', function(event) {
                 x = event.beta;
                 y = event.gamma;
                 z = event.alpha;
             });
         } else if ('ondeviceorientation' in window) {
-            alert("Kein Zugriff auf den Magnetometer möglich")
             window.addEventListener('deviceorientation', function(event) {
                 x = event.beta;
                 y = event.gamma;
                 z = event.alpha;
-                if (event.absolute) {
-                    alert("Oder doch??")
-                }
             });
         }
-
+    } else {
+        alert("Magnetometer nicht nutzbar!")
+        window.history.back();
     }
 
     window.setInterval(setData, 500);

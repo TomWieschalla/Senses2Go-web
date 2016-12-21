@@ -11,3 +11,7 @@ html, body {
 p {
     width: 70%;
 }
+
+.result {
+    color: blue;
+}

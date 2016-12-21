@@ -2,7 +2,8 @@ function initGeolocation() {
     if (navigator && navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
     } else {
-        console.log('Geolocation is not supported');
+        alert("GPS-Sensor nicht nutzbar!")
+        window.history.back();
     }
 }
 
